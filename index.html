@@ -4,8 +4,9 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+		<!-- BASICS -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>2014 學生計算機夏令營 | SITCON Summer Camp</title>
         <meta name="description" content="學生、開源、社群！今年夏天，讓我們齊聚一堂，揮灑屬於彼此的程式魂。">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,37 +17,353 @@
         <meta property="og:image" content="http://sitcon.org/2014/icon-2014-special.jpg">
         <meta property="og:site_name" content="學生計算機年會">
         <meta property="og:description" content="學生、開源、社群！今年夏天，讓我們齊聚一堂，揮灑屬於彼此的程式魂。">
-
+        
         <meta property="twitter:title" content="學生計算機夏令營">
         <meta property="twitter:description" content="學生、開源、社群！今年夏天，讓我們齊聚一堂，揮灑屬於彼此的程式魂。">
         <meta property="twitter:image:src" content="http://sitcon.org/2014/icon-2014-special.jpg">
         <meta property="twitter:image:width" content="256">
         <meta property="twitter:image:height" content="256">
-
-        <link rel="shortcut icon" href="http://sitcon.org/2014/favicon.ico" />
-
+        
+		<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+		<!-- skin -->
+		<link rel="stylesheet" href="skin/default.css">
+		<link rel="shortcut icon" href="http://sitcon.org/2014/favicon.ico" />
+		<style>
+			#sponsor img{
+				width:200px;
+			}
+		</style>
     </head>
+	 
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+		<section id="header" class="appear"></section>
+		<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+			 <div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="fa fa-bars color-white"></span>
+					</button>
+					<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">學生計算機夏令營</a></h1>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+						<li class="active"><a href="#about">關於</a></li>
+						<li><a href="#student">錄取</a></li>
+						<li><a href="#course">課程</a></li>
+						<li><a href="#sponsor">贊助</a></li>
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</div>
 
-        <!-- Add your site or application content here -->
+		<section class="featured">
+			<div class="container"> 
+				<div class="row mar-bot40">
+					<div class="col-md-6 col-md-offset-3">
+						
+						<div class="align-center">
+							<i class="fa fa-flask fa-5x mar-bot20"></i>
+							<h2 class="slogan">學生計算機夏令營</h2>
+							<p>
+							SITCON 首屆夏令營登場啦！花花綠綠的開放原始碼世界，讓我們做你的第一站！由社群朋友們共同規劃，精心設計的遊戲、豐富生動的課程，必定讓你在這個夏天收獲滿滿！
+							</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- services -->
+		<section id="about" class="section appear clearfix bg-white">
+		<div class="container"> 
+			<div class="row mar-bot40">
+				<div class="col-lg-8" >
+					<div class="align-center">
+						<span class="fa fa-code fa-5x mar-bot20"></span>
+					</div>
+					<div class="align-left">
+						<p>2012年，學生計算機年會自發崛起於資訊社群的浪潮中，秉持「以學生為本、由學生自發舉辦」的核心理念，籌備團隊自 2013 年起陸續主持年會、定期聚、黑客松、以及各地講座活動；於技術交流之餘，團隊成員也積極尋找推廣開源教育的方法，以期正向引領傳統資訊教育之風向。</p>
+						<p>學生計算機夏令營則為此一理念的體現：不受地域、校級所縛，夏令營籌備團隊將戮力於營期中帶領學員認識教科書外的資訊世界，跳脫商業應用與產學研究的框架，培養自主思考與協同合作的能力。更期待參與的學員在四天營期過後，不只於技術層面有所成就，更能在開放原始碼的參與中確立己身價值、進而尋求自我與社會願景之具體實現。</p>
+					</div>
+				</div>
+					
+				<div class="col-lg-4">
+					<div class="align-center">
+						<span class="fa fa-info-circle fa-5x mar-bot20"></span>
+					</div>
+					<div class="align-left">
+						<ul>
+						  <li>活動名稱：SITCON Summer Camp 2014「開源社群，創新學習科技人」</li>
+						  <li>主辦單位：SITCON 學生計算機年會社群</li>
+						  <li>活動時間：2014年7月14 (一) - 7/17 (四)</li>
+						  <li>活動地點：國立政治大學 11605 台北市文山區指南路二段64號</li>
+						</ul>
+						
+					</div>
+				</div>
+			
+			</div>	
 
-<script>
-  window.location = 'https://docs.google.com/forms/d/1VTrCayo7bE-H2PCm8oafji88n4n_RA5YsPk464Z5rY4/viewform';
-</script>
+		</div>
+		</section>
+			
+		<!-- spacer section:testimonial -->
+		<section style="background:url(1978360_760202670664533_1101727893_o.jpg);" class="section" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">				
+					<div class="col-lg-12">
+							<div class="align-center">
+										<div class="testimonial pad-top40 pad-bot40 clearfix">
+											<h5>
+												If I have seen further than certain other men it is by standing upon the shoulders of giants.
+											</h5>
+											<h5>
+												如果說我看得比別人更遠，那是因為我站在巨人的肩膀上
+											</h5>
+										</div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='//www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-34467841-1');ga('send','pageview');
-</script>
+								</div>
+							</div>
+					</div>
+				
+			</div>	
+		</div>	
+		</section>
+			
+		<!-- about -->
+		<section id="student" class="section appear clearfix">
+		<div class="container">
 
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    </body>
+			<div class="row mar-bot40">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h2 class="section-heading animated" data-animation="bounceInUp">錄取團員</h2>
+						
+					</div>
+				</div>
+			</div>
+			<div class="row align-center col-md-6 col-md-offset-3">
+				<table>
+					<tr>
+						<td class="col-md-2">廖Ｏ喬</td>
+						<td class="col-md-2">翁Ｏ皓</td>
+						<td class="col-md-2">蔡Ｏ芳</td>
+						<td class="col-md-2">馬Ｏ豪</td>
+						<td class="col-md-2">鐘Ｏ欣</td>
+					</tr>
+					<tr>
+						<td>駱Ｏ頡</td>
+						<td>謝Ｏ翰</td>
+						<td>吳Ｏ達</td>
+						<td>徐Ｏ裴</td>
+						<td>陳Ｏ睿</td>
+					</tr>
+					<tr>
+						<td>唐Ｏ玲</td>
+						<td>魏Ｏ洋</td>
+						<td>鄭Ｏ劭</td>
+						<td>陳Ｏ中</td>
+						<td>鄒Ｏ銘</td>
+					</tr>
+					<tr>
+						<td>周Ｏ宇</td>
+						<td>郭Ｏ塘</td>
+						<td>田Ｏ瑄</td>
+						<td>邱Ｏ甄</td>
+						<td>尤Ｏ衡</td>
+					</tr>
+					<tr>
+						<td>楊Ｏ恩</td>
+						<td>謝Ｏ濬</td>
+						<td>蔡Ｏ華</td>
+						<td>卓Ｏ凱</td>
+						<td>林Ｏ平</td>
+					</tr>
+					<tr>
+						<td>翁Ｏ宸</td>
+						<td>蔡Ｏ華</td>
+						<td>胡Ｏ安</td>
+						<td>湯Ｏ擎</td>
+						<td>簡Ｏ翰</td>
+					</tr>
+					<tr>
+						<td>湯Ｏ摯</td>
+						<td>張Ｏ奕</td>
+						<td>張Ｏ翔</td>
+						<td>黃Ｏ豪</td>
+						<td>何Ｏ儒</td>
+					</tr>
+					<tr>
+						<td>陳Ｏ宇</td>
+						<td>陳Ｏ晴</td>
+						<td>陳Ｏ昇</td>
+						<td>陳Ｏ宏</td>
+						<td>辜Ｏ豪</td>
+					</tr>
+					<tr>
+						<td>丁Ｏ傑</td>
+						<td>邱Ｏ蓉</td>
+						<td>廖Ｏ涵</td>
+						<td>李Ｏ儒</td>
+						<td>潘Ｏ元</td>
+					</tr>
+					<tr>
+						<td>楊Ｏ勳</td>
+						<td>林Ｏ安</td>
+						<td>林Ｏ期</td>
+						<td>劉Ｏ瑜</td>
+						<td>陳Ｏ山</td>
+					</tr>
+					<tr>
+						<td>陳Ｏ蓁</td>
+						<td>施Ｏ文</td>
+						<td>陳Ｏ文</td>
+						<td>李Ｏ中</td>
+						<td>王Ｏ乾</td>
+					</tr>
+					<tr>
+						<td>劉Ｏ福</td>
+						<td>劉Ｏ倫</td>
+						<td>張ＯＯ甫</td>
+						<td>蔡Ｏ霖</td>
+						<td>蔡Ｏ璇</td>
+					</tr>
+					<tr>
+						<td>林Ｏ富</td>
+						<td>張Ｏ庭</td>
+						<td>陳Ｏ華</td>
+						<td>蔡Ｏ文</td>
+						<td>尤Ｏ凱</td>
+					</tr>
+					<tr>
+						<td>鄭Ｏ霖</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+						
+		</div>
+		</section>
+		<!-- /about -->
+		
+		<!-- spacer section:stats -->
+		<section style="background:url(1622325_668928589836063_2085764777_o.jpg);background-size:100%;" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+			<div class="container">
+            <div class="align-center pad-top40 pad-bot40">
+                <blockquote class="bigquote color-white">開源社群，創新學習科技人</blockquote>
+				<p class="color-white">SITCON Summer Camp 2014</p>
+            </div>
+			</div>	
+		</section>
+		
+		<!-- section works -->
+		<section id="course" class="section appear clearfix">
+			<div class="container">
+				
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="section-heading animated" data-animation="bounceInUp">課程</h2>
+						</div>
+					</div>
+				</div>
+				<div class="align-center">
+					<img src="course.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="parallax2" style="background:url(1899373_760199783998155_2076611016_o.jpg);background-size:100%;" class="section parallax" data-stellar-background-ratio="0.5">	
+            <div class="align-center pad-top40 pad-bot40">
+                <blockquote class="bigquote color-white">因為有你們，讓這世界更好</blockquote>
+            </div>
+		</section>
+
+		<section id="sponsor" class="section appear clearfix">
+			<div class="container">
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="section-heading animated" data-animation="bounceInUp">贊助</h2>
+						</div>
+					</div>
+				</div>
+				<div class="align-center">
+					<div class="col-md-3 col-md-offset-3"><img src="螢幕快照 2014-06-09 下午3.59.38.jpg" alt=""></div>
+					<div class="col-md-3"><img src="pixnet.jpg" alt=""></div>
+				</div>
+			</div>
+		</section>
+		
+		
+	<section id="footer" class="section footer">
+		<div class="container">
+			<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+				<div class="col-sm-12 align-center">
+                    <ul class="social-network social-circle">
+                        <li><a target="_blank" href="https://www.facebook.com/SitconTW?fref=ts" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="mailto:contact@sitcon.org" class="icoFacebook" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/channel/UCMXFGmpqKAowZMbvz2O2aEw" class="icoFacebook" title="YouTube"><i class="fa fa-youtube"></i></a></li>
+                        <li><a target="_blank" href="https://www.flickr.com/photos/sitcon/sets/" class="icoFacebook" title="Flickr"><i class="fa fa-flickr"></i></a></li>
+                    </ul>				
+				</div>
+			</div>
+
+			<div class="row align-center copyright">
+					<div class="col-sm-12"><p>學生計算機年會籌備團隊</p></div>
+			</div>
+		</div>
+
+	</section>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/skrollr.min.js"></script>		
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/validate.js"></script>
+    <script src="js/main.js"></script>
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#1C705B"		}		]	}	]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }
+        </script>
+	</body>
 </html>
