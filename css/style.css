@@ -1089,3 +1089,41 @@ Media queries
 		margin-bottom: 30px;
 	}
 }
+#sponsor img{
+    height:60px;
+}
+#sponsor .row{
+    margin-bottom:20px;
+}
+
+.green{
+    background: #B6D7A8;    
+}
+.blue{
+    background: #C9DAF8;
+}
+.red{
+    background: #F4CCCC;
+}
+.purple{
+    background: #B4A7D6;
+}
+.gray{
+    background: #CCCCCC;
+}
+.yellow{
+    background: #FFF2CC;
+    vertical-align: inherit;
+}
+.table > tbody > tr > th, .table > tfoot > tr > th, .table > tbody > tr > td, .table > tfoot > tr > td{
+    vertical-align: inherit;
+    color:black;
+}
+.dark-green{
+    background: #38761D;
+    color: white;
+    font-weight: bold;
+}
+td[data-toggle="modal"]:hover{
+    font-weight: bold;
+}
